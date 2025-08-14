@@ -1,6 +1,6 @@
 # Pen To Pixel – Django Blog Application
 
-Simple blog platform built with ****Django**, consisting user authentication, profile management, and clean UI styling with **Bootstrap** and **django-crispy-forms**.
+Simple blog platform built with **Django**, consisting user authentication, profile management, and clean UI styling with **Bootstrap** and **django-crispy-forms**.
 
 ---
 
