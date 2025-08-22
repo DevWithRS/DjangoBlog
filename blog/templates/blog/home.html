@@ -3,7 +3,7 @@
 {% block content %}
 <div class="row mb-4">
     <div class="col">
-        <h1 class="display-8">Your Posts</h1>
+        <h1 class="display-8">Posts</h1>
     </div>
     <div class="col text-end">
         <a href="{% url 'post-create' %}" class="btn btn-primary">Create New Post</a>
@@ -20,9 +20,13 @@
             <p>{{ post.content }}</p>
             <div class="d-flex justify-content-between align-items-center">
                 <small>{{ post.created_at|date:"F j, Y, g:i a" }}</small>
+                <small>Created by: {{ post.author }}</small>
+
+                {% if request.user.is_authenticated and request.user.username == post.author.username %}
                 <div class="btn-group">
                     <a href="{% url 'post-update' post.pk %}" class="btn btn-sm btn-outline-secondary">Edit</a>
                     <a href="{% url 'post-delete' post.pk %}" class="btn btn-sm btn-outline-danger">Delete</a>
+                    {% endif %}
                 </div>
             </div>
         </div>

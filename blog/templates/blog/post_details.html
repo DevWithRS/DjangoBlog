@@ -6,10 +6,20 @@
     <p>{{ post.content }}</p>
     <hr>
     <small>{{ post.created_at }}</small>
+
+    {% if request.user.is_authenticated and request.user.username == post.author.username %}
+    <p>Logged in user ID: {{ request.user.id }}</p>
+    <p>Post author ID: {{ post.author.id }}</p>
+
     <div class="btn-group">
         <a class="btn btn-warning" href="{% url 'post-update' post.pk %}">Edit</a>
         <a class="btn btn-danger" href="{% url 'post-delete' post.pk %}">Delete</a>
-        <a class="btn btn-secondary" href="{% url 'home' %}">Return Home</a>
     </div>
+
+    {% endif %}
+
+
+
+    <a class="btn btn-secondary" href="{% url 'home' %}">Return Home</a>
 </div>
 {% endblock %}
