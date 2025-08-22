@@ -30,6 +30,7 @@ Project started with a tutorial by **CodeWithJosh** and I expanded from there; I
 
 - Improved the UI, making it minimalistic and appealing/ used a consistent colour scheme.
 - Added prevention of users editing/deleting other posts that they do not own.
+- Added the Author's Name on each post.
 
 ## Installation
 
