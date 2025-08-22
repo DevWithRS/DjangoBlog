@@ -36,5 +36,5 @@ Project started with a tutorial by **CodeWithJosh** and I expanded from there; I
 
 ### Clone the repository
 ```bash
-git clone https://github.com/r32wn/DjangoBlog.git
+git clone https://github.com/DevWithRS/DjangoBlog.git
 cd DjangoBlog
