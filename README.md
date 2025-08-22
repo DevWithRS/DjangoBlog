@@ -24,6 +24,12 @@ Simple blog platform built with **Django**, consisting user authentication, prof
 - **Version Control:** Git & GitHub
 
 ---
+## Notes
+
+Project started with a tutorial by **CodeWithJosh** and I expanded from there; I have:
+
+- Improved the UI, making it minimalistic and appealing/ used a consistent colour scheme.
+- Added prevention of users editing/deleting other posts that they do not own.
 
 ## Installation
 
